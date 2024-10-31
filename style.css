@@ -1,0 +1,82 @@
+*{
+    margin: 0%;
+    padding:0%;
+}
+
+.container{
+    background-color: rgb(243, 185, 97);
+    height: 100vh;
+    /* width:100vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .board{
+        background-color: rgb(45, 44, 44);
+        height: 100%;
+        width: 100%;
+       
+    }
+  }
+  
+.board{
+    background-color: rgb(45, 44, 44);
+    height: 90%;
+    width: 45%;
+    display: grid;
+    grid-template-rows: repeat(20 , 1fr);
+    grid-template-columns: repeat(20 , 1fr);
+}
+
+.head{
+    background-color:red ;
+    border-radius: 10px;
+}
+
+.snake{
+    background-color: greenyellow;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+.food{
+    background-color:blue ;
+    border-radius: 50%;
+}
+i{font-size:50px;
+    font-weight: bold;
+}
+
+.arrow{
+    position: absolute;
+    left: 30px;
+    bottom : 100px;
+    display: flex;
+    gap:14px;
+    /* border: 2px solid red; */
+}
+.arrowup{
+   /* border: 2px solid black;  */
+   position: absolute;
+   bottom:40px ;
+   left:48px ;
+}
+
+.arrowdown{
+    /* border: 2px solid black;  */
+    position: absolute;
+    bottom:70px ;
+    right:48px ;
+ }
+ .arrowright{
+    /* border: 2px solid black;  */
+    position: absolute;
+    bottom:110px ;
+    right:8px ;
+ }
+ .arrows{
+    position: absolute;
+    bottom:20px ;
+    right:40px;
+ }
